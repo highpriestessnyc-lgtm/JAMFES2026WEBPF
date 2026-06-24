@@ -275,6 +275,10 @@
     .btn { padding: 5px 10px; font-size: 0.75rem; }
   }
 </style>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="JAMFes2026">
 </head>
 <body>
 
@@ -294,7 +298,7 @@
     <span class="page-total">/ <span id="pg-total">—</span></span>
     <button class="btn" id="btn-next"  onclick="gotoPage(cur+1)">次 ▶</button>
     <button class="btn" id="btn-last"  onclick="gotoPage(PAGES.length)">▶|</button>
-    <button class="btn" onclick="toggleFS()">⛶</button>
+    
   </div>
 </header>
 
@@ -475,10 +479,7 @@ document.addEventListener('touchend',   e => {
 
 
 // ===== FULLSCREEN =====
-function toggleFS() {
-  if (!document.fullscreenElement) document.documentElement.requestFullscreen();
-  else document.exitFullscreen();
-}
+
 </script>
 </body>
 </html>
